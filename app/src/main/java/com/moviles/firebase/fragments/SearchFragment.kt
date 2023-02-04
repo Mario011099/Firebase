@@ -47,11 +47,13 @@ class SearchFragment : Fragment() {
                 val firstName = it.child("firstName").value
                 val lastName = it.child("lastName").value
                 val age = it.child("age").value
+                val userName = it.child("userName").value
                 Toast.makeText(context, "Successfuly Read", Toast.LENGTH_SHORT).show()
                 binding.userNameField.text?.clear()
                 binding.name.text = firstName.toString()
                 binding.lastName.text = lastName.toString()
                 binding.age.text = age.toString()
+                binding.userName.text = userName.toString()
 
             } else {
                 Toast.makeText(context, "Username doesn't exist", Toast.LENGTH_SHORT).show()
