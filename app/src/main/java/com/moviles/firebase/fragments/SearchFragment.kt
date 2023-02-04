@@ -6,13 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.moviles.firebase.R
 import com.moviles.firebase.databinding.FragmentSearchBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
@@ -22,6 +20,8 @@ private const val ARG_PARAM2 = "param2"
 class SearchFragment : Fragment() {
 
     private lateinit var binding: FragmentSearchBinding
+    private lateinit var database: DatabaseReference
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -41,7 +41,7 @@ class SearchFragment : Fragment() {
 
     private fun readData(userName: String) {
         database = FirebaseDatabase.getInstance().getReference("Users")
-        databae.child(userName).get().addOnSuccessListener {
+        database.child(userName).get().addOnSuccessListener {
 
             if (it.exists()) {
                 val firstName = it.child("firstName").value
