@@ -46,7 +46,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             style="?attr/textInputFilledStyle"
-            android:id="@+id/filledTextField"
+            android:id="@+id/firstName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Name"
