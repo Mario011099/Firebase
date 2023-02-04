@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "192949522463",
+    "project_id": "prog-movil-cd8e9",
+    "storage_bucket": "prog-movil-cd8e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192949522463:android:d6f8c2dcfd31aa4b5d452a",
+        "android_client_info": {
+          "package_name": "com.moviles.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192949522463-mk0rdepjh5sultto4m6e0ol4furo7skh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpJZPg8fjsT-diP66AftDQp-8Nr1CiNxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192949522463-mk0rdepjh5sultto4m6e0ol4furo7skh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
