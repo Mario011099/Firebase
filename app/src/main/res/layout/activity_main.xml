@@ -6,13 +6,101 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <LinearLayout
+        android:id="@+id/title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/purple_200">
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_weight="0.5"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Real Time Database">
+
+        </TextView>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/firebase">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:id="@+id/menu"
+        app:tabMode="fixed"
+        android:contentDescription="hhola"
+
+
+        >
+
+        <com.google.android.material.tabs.TabItem
+            android:contentDescription="add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:icon="@drawable/ic_baseline_add_24"
+            android:id="@+id/add"
+            />
+        <com.google.android.material.tabs.TabItem
+            android:contentDescription="search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:icon="@drawable/ic_baseline_search_24"
+            android:id="@+id/search"
+            />
+        <com.google.android.material.tabs.TabItem
+            android:contentDescription="delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:icon="@drawable/ic_baseline_delete_24"
+            android:id="@+id/update"
+            />
+        <com.google.android.material.tabs.TabItem
+            android:contentDescription="update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:icon="@drawable/ic_baseline_update_24"
+            android:id="@+id/delte"
+            />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
