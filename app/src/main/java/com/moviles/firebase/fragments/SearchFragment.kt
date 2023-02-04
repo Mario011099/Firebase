@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import com.moviles.firebase.R
 import com.moviles.firebase.databinding.FragmentSearchBinding
 
 

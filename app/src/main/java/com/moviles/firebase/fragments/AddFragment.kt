@@ -12,7 +12,6 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.moviles.firebase.R
 import com.moviles.firebase.databinding.FragmentAddBinding
-import com.moviles.firebase.databinding.FragmentDeleteBinding
 import com.moviles.firebase.model.User
 
 

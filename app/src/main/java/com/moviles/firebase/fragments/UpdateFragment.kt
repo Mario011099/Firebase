@@ -29,10 +29,11 @@ class UpdateFragment : Fragment() {
     }
     private fun data(){
         binding.buttonUpdate.setOnClickListener {
-            val userName = binding.userName.editText.toString()
-            val firstName = binding.firstName.editText.toString()
-            val lastName = binding.lastName.editText.toString()
-            val age = binding.age.editText.toString()
+            val userName: String = binding.userNameEdit.text.toString()
+            val lastName: String = binding.lastNameEdit.text.toString()
+            val firstName: String = binding.firstNameEdit.text.toString()
+            val age: String = binding.ageEdit.text.toString()
+
             updateData(userName,firstName,lastName,age)
         }
     }
@@ -44,6 +45,7 @@ class UpdateFragment : Fragment() {
             "lastName" to lastName,
             "age" to age
         )
+
 
         database.child(userName).updateChildren(user).addOnSuccessListener {
             binding.userName.editText!!.text.clear()
