@@ -32,7 +32,7 @@ class DeleteFragment : Fragment() {
             //Obtención de datos
             val userName = binding.nameUser.text.toString()
             //Verificar si es nulo o empty
-            if(userName.isNullOrEmpty()){
+            if(!userName.isNullOrEmpty()){
                 deleteUser(userName)
             }else{
                 Toast.makeText(activity?.baseContext,
