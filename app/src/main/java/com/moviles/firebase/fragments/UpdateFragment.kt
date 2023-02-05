@@ -43,7 +43,8 @@ class UpdateFragment : Fragment() {
         val user = mapOf<String,String>(
             "firstName" to firstName,
             "lastName" to lastName,
-            "age" to age
+            "age" to age,
+            "username" to userName
         )
 
 
